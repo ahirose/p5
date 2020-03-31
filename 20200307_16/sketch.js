@@ -7,6 +7,7 @@ function setup() {
   pixelDensity(1);
   video = createCapture(VIDEO);
   video.size(320, 240);
+  video.hide();
   background(51);
 }
 
@@ -17,7 +18,7 @@ function draw() {
   var w = video.width;
   var h = video.height;
 
-copy(video, 
+	copy(video, 
          0, y, w, 1, 
          0, y, width, height);
 
