@@ -22,6 +22,7 @@ function draw(){
       var g = capture.pixels[index+1];
       var b = capture.pixels[index+2];
       var bright = (r+g+b)/3;
+      
       pixels[index+0]=bright;
       pixels[index+1]=bright;
       pixels[index+2]=bright;
